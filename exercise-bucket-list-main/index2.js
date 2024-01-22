@@ -30,4 +30,22 @@ list.innerHTML=newInnerHtmlString
 let list = document.querySelector(".list")
 list.insertAdjacentHTML("beforeend", "<p>Win an olympic medal</p>")
 
+addWithLoop ()
+
+let children = list.childNodes
+console.log(children)
+
+let header = document.querySelector("h2")
+header.innerHTML = "Therese's"
+
+
+}
+
+function addWithLoop () {
+    for (let i= 0; i<3; i++) {
+    const node = document.createElement("p")
+    const textnode2 = document.createTextNode("Earn a million dollars!")
+    node.appendChild(textnode2)
+   document.body.appendChild(node)
+}
 }
