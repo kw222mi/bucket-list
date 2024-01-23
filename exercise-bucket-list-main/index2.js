@@ -39,6 +39,25 @@ let header = document.querySelector("h2")
 header.innerHTML = "Therese's"
 
 
+let oldChild = document.querySelector("p")
+let newChild = document.createElement("p")
+const newBucket = document.createTextNode("Travel the world")
+newChild.appendChild(newBucket)
+list.replaceChild(newChild, oldChild)
+
+
+let oldChild2 = document.querySelectorAll("p")
+let newChild2 = document.createElement("p")
+const newBucket2 = document.createTextNode("Travel the world2")
+newChild.appendChild(newBucket2)
+list.replaceChild(newChild2, oldChild2[1])
+
+
+let last = list.lastElementChild
+console.log(last)
+let result = list.removeChild(last)
+console.log(result)
+
 }
 
 function addWithLoop () {
